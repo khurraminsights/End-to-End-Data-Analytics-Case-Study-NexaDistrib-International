@@ -1,492 +1,284 @@
-# MASTER PROMPT — Transform My NexaDistrib Power BI Project into a Premium Executive Data Storytelling Portfolio
+# NexaDistrib International | Global Supply Chain Intelligence
 
-## YOUR ROLE
+### $24.83M in Revenue. 84 Stockouts. One Connected Supply Chain Story.
 
-Act as a **Principal Data Analyst, Senior Business Intelligence Consultant, Data Storytelling Expert, UX/UI Portfolio Designer, and Front-End Developer with 10+ years of professional experience**.
+**SQL Server | Power BI Reporting | Supply Chain Analytics | Business Intelligence**
 
-You have delivered hundreds of analytical dashboards and business presentations to CEOs, CFOs, COOs, supply chain directors, senior executives, and enterprise stakeholders.
-
-You specialize in converting complex SQL and Power BI projects into compelling, visually sophisticated business stories that communicate business problems, analytical reasoning, measurable findings, and decision-making opportunities.
-
-Your task is to transform my existing NexaDistrib International project into a standout portfolio presentation that immediately communicates my analytical capabilities.
-
-**Your guiding philosophy:**
-
-"Don't just show what the dashboard measures. Tell the business story behind the numbers, explain why they matter, and show what decision-makers should investigate or do next."
+![NexaDistrib Supply Chain Analytics Dashboard](Thumbnail%20dashboard.png)
 
 ---
 
-## 1. PROJECT CONTEXT
+## Executive Overview
 
-**Project:** NexaDistrib International — Global Supply Chain Performance & Operations Analytics
+**Strong revenue doesn't always mean a healthy supply chain.**
 
-**Domain:** Supply Chain, Procurement, Inventory, Logistics, Sales and Distribution
+Behind every successful distribution network lies a complex relationship between suppliers, inventory, warehouses, customer demand, and delivery operations.
 
-**Technical Skills:** SQL Server, T-SQL, CTEs, Window Functions, KPI Development, Power BI Reporting, Operational Analytics
+This project explores a critical business question:
 
-**Project Type:** Fictional business case study for a professional data analytics portfolio.
+> **How can a global distribution business identify operational risks, improve supply chain visibility, and make smarter decisions using data?**
 
-I will provide:
+Using SQL Server analytics and executive-style dashboard reporting, I investigated supplier reliability, inventory shortages, warehouse capacity, revenue patterns, and delivery performance.
 
-1. My existing `projects.html` website code.
-2. My current NexaDistrib project description and case study.
-3. A high-resolution image displaying four dashboard pages.
-4. My GitHub project repository and supporting documentation, when available.
+The objective was not simply to report operational metrics, but to connect them with business decisions.
 
-Use these materials as the source of truth.
-
-Study the attached dashboard image carefully, including its layout, KPI cards, charts, dashboard titles, business functions, and color palette.
-
-The four dashboard sections are:
-
-- Executive Summary Dashboard
-- Inventory & Warehouse Analysis
-- Supplier & Procurement Performance
-- Sales & Delivery Performance
-
-**Important:** The project repository contains dashboard images and reporting materials, but the reviewed repository did not contain an editable `.pbix` file. Do not imply that an executable Power BI file is available unless verified.
+**Project Type:** Fictional business analytics case study designed to demonstrate analytical problem-solving and executive reporting.
 
 ---
 
-## 2. MAIN OBJECTIVE
+## Executive KPI Snapshot
 
-Rewrite and visually enhance ONLY the NexaDistrib project presentation inside my existing portfolio website.
+| Business KPI | Dashboard-Reported Value | Business Significance |
+|---|---:|---|
+| Total Revenue | **$24.83M** | Overall reported sales performance |
+| Total Orders | **58,742** | Transaction and order activity |
+| Profit Margin | **17.6%** | Reported profitability |
+| On-Time Delivery | **91.3%** | Delivery reliability indicator |
+| Inventory Units | **1,245,780** | Reported inventory availability |
+| Stockout Products | **84** | Potential replenishment risk |
+| Low-Stock Products | **156** | Items requiring inventory monitoring |
+| Warehouse Utilization | **72%** | Warehouse capacity usage |
+| Supplier On-Time Performance | **76%** | Procurement reliability indicator |
+| Late Deliveries | **36** | Reported supplier delivery exceptions |
 
-Transform the current generic technical description into a visually engaging, executive-level business case study.
-
-The result should answer five important questions:
-
-**THE PROBLEM:** What business challenge required investigation?
-
-**THE ANALYSIS:** How did I investigate the problem using SQL and business intelligence techniques?
-
-**THE DISCOVERY:** What important patterns or operational risks appeared in the results?
-
-**THE IMPLICATION:** Why do these findings matter commercially?
-
-**THE DECISION:** What practical actions should business leaders consider?
-
-Avoid presenting the project as merely a collection of dashboards and software tools.
-
-Demonstrate my analytical thinking, business understanding, and ability to explain complex information to stakeholders.
+> **Data transparency:** These figures are taken from dashboard visuals and have not been independently reconciled against the complete source dataset. They should be treated as reported indicators rather than independently verified operational results.
 
 ---
 
-## 3. THE STORYTELLING HOOK
+## 01 | The Business Challenge
 
-Create a compelling, professional headline that makes visitors curious about the project.
+### A Distribution Network with Multiple Operational Blind Spots
 
-The headline should communicate the central operational challenge.
+Revenue alone cannot explain whether supply chain operations are efficient.
 
-Possible creative direction:
+A business may generate substantial sales while simultaneously experiencing supplier delays, inventory shortages, uneven warehouse capacity, and inconsistent delivery performance.
 
-**"Inside a $24.83M Supply Chain: Where Operational Performance Meets Hidden Risk"**
+For NexaDistrib, this simulated analytical investigation focused on four operational questions:
 
-Supporting narrative:
+1. **Procurement:** Which suppliers might be creating replenishment delays?
+2. **Inventory:** Which products require urgent stock monitoring?
+3. **Warehousing:** Is inventory capacity being utilized effectively?
+4. **Logistics:** How reliably are orders reaching customers?
 
-"Strong revenue performance does not automatically guarantee operational efficiency. This analytical case study examines how supplier delays, inventory shortages, warehouse utilization and delivery reliability can influence supply chain decisions."
-
-The example must not be interpreted as proof of verified financial performance.
-
-Use the strongest appropriate headline after reviewing the source material.
-
-The final headline must be:
-
-- Specific to the NexaDistrib case study
-- Concise and memorable
-- Professionally credible
-- Appropriate for executive audiences
-- Strong enough to attract a recruiter's attention without exaggeration
+**The analytical goal:** Connect fragmented business activities into a consolidated view that helps management recognize operational risks and evaluate improvement opportunities.
 
 ---
 
-## 4. VISUAL KPI STORYTELLING
+## 02 | My Analytical Approach
 
-Use the dashboard image to identify the most compelling reported KPIs.
+### Turning Operational Data into Business Intelligence
 
-The image appears to present these values:
+I structured the analysis around three stages.
 
-| KPI | Reported value |
+### Step 1 — Understand and Connect the Data
+
+Examined relational data covering:
+
+- Suppliers and purchase orders
+- Products and inventory
+- Warehouses and capacity
+- Customers and sales orders
+- Shipments and delivery activity
+
+SQL joins and aggregations supported comparisons across related operational entities.
+
+### Step 2 — Investigate Business Performance
+
+Applied SQL Server techniques including:
+
+| Technique | Analytical Purpose |
 |---|---|
-| Total Revenue | $24.83M |
-| Total Orders | 58,742 |
-| Profit Margin | 17.6% |
-| On-Time Delivery | 91.3% |
-| Total Inventory Units | 1,245,780 |
-| Stockout Products | 84 |
-| Low-Stock Products | 156 |
-| Warehouse Utilization | 72% |
-| Supplier On-Time Performance | 76% |
-| Late Deliveries | 36 |
+| JOINs | Connect operational entities |
+| CTEs | Organize multi-stage analytical queries |
+| CASE | Classify stock and delivery conditions |
+| LAG() | Compare monthly revenue performance |
+| RANK() | Identify leading revenue contributors |
+| NTILE() | Segment customers by revenue |
+| PERCENTILE_CONT() | Analyze median fulfillment duration |
+| DATEDIFF() | Calculate operational time intervals |
+| NULLIF() | Support safer calculations |
 
-**Critical accuracy rule:** These figures are transcribed from the dashboard visual, not independently reconciled against the full source dataset.
+### Step 3 — Communicate Findings
 
-Treat them as *dashboard-reported values pending validation*.
+Organized the analytical narrative into four executive dashboard areas:
 
-Do not manufacture, adjust, extrapolate or claim independent verification of these metrics.
+**Executive Summary:** Revenue, orders, profitability, and high-level service performance.
 
-### KPI Card Design
+**Inventory & Warehouse:** Stock availability, reorder points, utilization, and product-level inventory exposure.
 
-If the existing HTML supports a featured project or expanded project detail view, create an eye-catching KPI section with 4–6 cards.
+**Supplier & Procurement:** Purchase orders, supplier reliability, and procurement performance.
 
-For example:
+**Sales & Delivery:** Customer revenue contribution, order fulfillment, and logistics performance.
 
-**$24.83M — Dashboard-Reported Revenue**
+---
 
-A measure of the sales activity represented in this portfolio scenario.
+## 03 | What the Dashboard Revealed
 
-**91.3% — Reported On-Time Delivery**
+### Four Signals Behind Supply Chain Performance
 
-An indicator of delivery performance that warrants validation against actual and promised dates.
-
-**84 — Products Flagged as Stockouts**
-
-Products potentially requiring urgent inventory review.
+### Insight 01 — Supplier Reliability Deserves Attention
 
 **76% — Reported Supplier On-Time Performance**
 
-A potential procurement reliability concern requiring supplier-level investigation.
+The dashboard indicates that supplier delivery reliability may require management attention.
 
-Present KPIs using an elegant, data-dense design with concise business context.
+Inconsistent supplier timeliness can create uncertainty around replenishment schedules and product availability.
 
-Do not overload the layout or create unsupported live metrics.
+**Business implication:** Procurement teams may need to examine delays by supplier, product category, and purchase-order history.
 
----
+**Recommended action:** Review recurring late deliveries and evaluate supplier-level performance before considering changes to vendor allocation.
 
-## 5. THE BUSINESS STORY — PROBLEM → EVIDENCE → INSIGHT → ACTION
+### Insight 02 — Inventory Availability Is a Critical Risk Area
 
-Build the NexaDistrib narrative using the following structure.
+**84 Stockout Products | 156 Low-Stock Products**
 
-### CHAPTER 1 — THE BUSINESS CHALLENGE
+The dashboard highlights products potentially facing availability constraints.
 
-Suggested headline:
+Inventory shortages can complicate order fulfillment, particularly when demand is concentrated in specific products or regions.
 
-**"A Growing Distribution Network. Multiple Operational Blind Spots."**
+**Business implication:** Replenishment priorities should reflect stock levels, reorder thresholds, and sales demand.
 
-Explain how a distribution company may struggle to maintain control over suppliers, warehouse capacity, inventory availability, customer demand and delivery performance when operational information is fragmented.
+**Recommended action:** Establish regular reorder-point reviews and prioritize products with the strongest evidence of replenishment urgency.
 
-Introduce the central analytical question:
+### Insight 03 — Warehouse Capacity Requires Closer Analysis
 
-"How can business leaders connect procurement, inventory, sales and logistics data to identify operational risks and improve decision-making?"
+**72% — Reported Warehouse Utilization**
 
-Keep the story engaging without inventing events or claiming these were real operational problems at an actual employer.
+Overall warehouse utilization provides a useful starting point, but a single average cannot reveal differences between locations.
 
-### CHAPTER 2 — HOW I APPROACHED THE PROBLEM
+One warehouse may have spare capacity while another experiences local constraints.
 
-Suggested headline:
+**Business implication:** Warehouse-level comparisons may reveal opportunities to review capacity planning and inventory distribution.
 
-**"Connecting Disconnected Operations into One Analytical View"**
+**Recommended action:** Analyze utilization by warehouse alongside regional sales demand before proposing stock transfers.
 
-Explain the work in three steps:
+### Insight 04 — Delivery Metrics Need Reliable Definitions
 
-**01 — Prepare and Structure**
+**91.3% — Reported On-Time Delivery**
 
-Analyzed related supplier, product, customer, warehouse, purchase-order, sales-order and shipment entities through relational SQL techniques.
+Delivery performance is a major indicator of customer service quality.
 
-**02 — Investigate Performance**
+However, a shipment being marked *Delivered* does not necessarily mean it arrived on time.
 
-Used joins, CTEs, aggregations, conditional logic, date calculations and window functions to investigate service levels, inventory risk, revenue performance and operational efficiency.
+**Business implication:** Management decisions based on delivery KPIs require consistent measurement definitions.
 
-**03 — Communicate Results**
+**Recommended action:** Recalculate carrier performance by comparing actual delivery dates with estimated or promised dates for eligible shipments.
 
-Organized the analytical outputs into executive-facing dashboard views and reporting materials covering procurement, inventory, sales and logistics.
-
-Mention only methods supported by the project evidence.
-
-Avoid implying that the complete dashboard was reproduced from the available repository files.
-
-### CHAPTER 3 — WHAT THE DATA REVEALED
-
-Suggested headline:
-
-**"Four Signals Behind Supply Chain Performance"**
-
-Create four visually distinctive insight blocks.
-
-**Insight 01 — Supplier Reliability**
-
-Highlight reported supplier on-time performance and explain how supplier delays can introduce replenishment uncertainty.
-
-**Insight 02 — Inventory Risk**
-
-Use reported stockout and low-stock indicators to explain the potential need for replenishment prioritization.
-
-**Insight 03 — Warehouse Utilization**
-
-Describe how warehouse-level capacity differences could indicate opportunities to review inventory distribution and space allocation.
-
-**Insight 04 — Delivery Performance**
-
-Discuss differences in shipment timeliness and the importance of comparing actual delivery dates with estimated or promised dates.
-
-Each insight must include:
-
-- A clear headline
-- One evidence-supported metric or observation
-- The business implication
-- A suggested management action
-
-If a finding has not been independently validated, clearly identify it as a dashboard-reported observation.
-
-### CHAPTER 4 — WHAT LEADERS SHOULD DO NEXT
-
-Suggested headline:
-
-**"Turning Operational Signals into Management Priorities"**
-
-Translate findings into clear, practical recommendations:
-
-- Review supplier-level late-delivery patterns before changing vendor allocation.
-- Prioritize items below reorder points for replenishment review.
-- Compare warehouse utilization against regional demand.
-- Recalculate carrier on-time performance using actual versus estimated delivery dates.
-- Analyze slow-moving inventory before considering stock redistribution.
-
-Frame every action as a recommendation, not as a completed or achieved improvement.
+The reported percentage requires validation before being interpreted as a verified on-time delivery rate.
 
 ---
 
-## 6. VISUAL DESIGN — MATCH THE ATTACHED DASHBOARD
+## 04 | From Insights to Business Decisions
 
-Take direct inspiration from the dashboard's existing design language.
+### Recommended Management Priorities
 
-**Design Theme:** Premium Enterprise Business Intelligence
+| Priority | Operational Focus | Proposed Action | KPI to Monitor |
+|---|---|---|---|
+| High | Supplier reliability | Investigate recurring supplier delays | Supplier On-Time % |
+| High | Inventory availability | Review critical reorder-point exceptions | Stockout and Low-Stock Counts |
+| High | Delivery performance | Validate delivery timeliness by carrier | Verified On-Time Delivery % |
+| Medium | Warehouse efficiency | Compare capacity usage against regional demand | Warehouse Utilization % |
+| Medium | Customer concentration | Monitor dependency on major customers | Top-Customer Revenue Share |
+| Medium | Slow-moving inventory | Review stock levels against sales activity | Inventory Turnover / Aging |
 
-**Visual Identity:**
-
-- Deep navy or near-black background
-- Electric cyan highlights
-- Subtle luminous blue borders
-- Teal for neutral analytical insights
-- Green for positive KPI performance, when supported
-- Amber for operational warnings
-- Red for validated critical risk indicators
-- High-contrast white typography
-- Sophisticated card layouts
-- Subtle gradients and restrained visual effects
-
-The design should feel like a polished executive intelligence platform, not an overcrowded infographic.
-
-Use:
-
-**Visual hierarchy:** Make the project headline, central finding, and important KPI values immediately recognizable.
-
-**KPI emphasis:** Use larger typography for numbers and compact labels.
-
-**Insight cards:** Use icons, highlighted figures, short explanations and clear business implications.
-
-**Strategic spacing:** Separate analytical sections for easy scanning.
-
-**Microinteractions:** Add tasteful hover effects only if they complement the existing website.
-
-**Responsive layout:** Maintain a visually excellent experience on desktops, tablets and mobile screens.
-
-**Accessibility:** Preserve strong contrast, readable text, meaningful alt text and keyboard accessibility.
-
-Do not change the site's global design system.
+**These are proposed recommendations, not implemented operational improvements.**
 
 ---
 
-## 7. PORTFOLIO CARD VS. EXPANDED CASE STUDY
+## 05 | Dashboard Gallery
 
-Apply two levels of storytelling only where supported by the existing website structure and explicitly permitted modifications.
+### Executive Summary Dashboard
 
-### LEVEL A — COMPACT PORTFOLIO CARD
+![Executive Summary Dashboard](page%201.png)
 
-The portfolio card should immediately capture attention.
+### Inventory & Warehouse Analysis
 
-Use:
+![Inventory and Warehouse Dashboard](page%202.png)
 
-**Project Title**
+### Supplier & Procurement Performance
 
-A memorable business-first title.
+![Supplier and Procurement Dashboard](page%203.png)
 
-**Short Description**
+### Sales & Delivery Performance
 
-Write 40–65 compelling words covering the business challenge, analytical approach and main insight.
-
-**Business Challenge**
-
-Write 30–45 words explaining the decision-making problem.
-
-**Key Findings**
-
-Write 45–70 words featuring the strongest supported observations and their business implications.
-
-**Technology Tags**
-
-SQL Server | Power BI Reporting | Supply Chain Analytics
-
-**Call to Action**
-
-Keep the existing GitHub link functional.
-
-Avoid generic wording such as "Created interactive dashboards with Power BI."
-
-Instead, communicate what the analysis helped investigate and why the findings are useful.
-
-### LEVEL B — EXPANDED PROJECT STORY
-
-If I explicitly authorize a new detailed project page or expanded section, create a premium case-study presentation containing:
-
-1. Executive headline and one-sentence narrative
-2. Hero dashboard image
-3. Reported KPI highlights
-4. Business challenge
-5. Analytical methodology
-6. Four operational insights
-7. Business recommendations
-8. Tools and demonstrated skills
-9. Dashboard gallery
-10. Existing GitHub project link
-
-Use the existing four dashboard images in the gallery if their paths and availability are confirmed.
-
-Do not automatically create an additional page or change the site's navigation.
+![Sales and Delivery Dashboard](page%204.png)
 
 ---
 
-## 8. CRITICAL RULES — NO FABRICATED BUSINESS IMPACT
+## 06 | Technology Stack
 
-Maintain strict analytical honesty.
-
-Never:
-
-- Invent business improvements or implementation results.
-- Claim that the project was completed for a real NexaDistrib employer.
-- Suggest that recommended actions were executed.
-- Describe dashboard values as independently audited facts.
-- Claim that the original `.pbix` file is downloadable when it is not present.
-- Treat the current carrier SQL calculation as a verified on-time delivery measure.
-- Invent Power BI transformations, DAX calculations or data-model relationships.
-- Attribute changes in revenue or profit to causes that have not been analyzed.
-- Claim complete reproducibility when required source tables are missing.
-
-The case study must be credible enough to withstand questioning during a technical interview.
+| Technology | Application |
+|---|---|
+| SQL Server | Relational querying and operational analysis |
+| T-SQL | Business logic, aggregations, and KPI calculations |
+| CTEs | Structured analytical workflows |
+| Window Functions | Ranking, segmentation, and trend comparisons |
+| Power BI Reporting | Dashboard-based communication of analytical results |
+| CSV Data | Operational source extracts |
+| PowerPoint / PDF | Executive reporting and project presentation |
 
 ---
 
-## 9. EXISTING HTML PRESERVATION RULES
+## 07 | Project Deliverables
 
-I will provide my complete existing `projects.html` source code.
+The repository contains the following supporting materials:
 
-Do not rebuild my website.
-
-Do not change any unrelated content.
-
-Unless I explicitly authorize broader changes, preserve:
-
-- Navigation menu
-- Hero section
-- Project statistics
-- SQL and Excel cards
-- Other Power BI project cards
-- Project order
-- Image paths
-- GitHub URLs
-- CSS classes and IDs
-- Filter functionality
-- JavaScript behavior
-- Responsive breakpoints
-- Existing fonts and global colors
-- Footer and contact links
-
-Update only the NexaDistrib project card's approved text fields.
-
-**If I authorize visual enhancements**, scope new CSS and markup to the NexaDistrib project presentation. Do not allow changes to affect other cards.
-
-Do not add JavaScript dependencies or external frameworks unnecessarily.
-
-Keep the current design and functionality intact.
+| Deliverable | File |
+|---|---|
+| SQL Analysis | [NexaDistrib.sql](NexaDistrib.sql) |
+| Dashboard Overview | [Thumbnail dashboard.png](Thumbnail%20dashboard.png) |
+| Executive Dashboard | [Page 1](page%201.png) |
+| Inventory Dashboard | [Page 2](page%202.png) |
+| Procurement Dashboard | [Page 3](page%203.png) |
+| Sales & Delivery Dashboard | [Page 4](page%204.png) |
+| Business Report | [PDF Report](Global%20Supply%20Chain%20Performance%20%26%20Optimization%20Analytics.pdf) |
+| Executive Presentation | [PowerPoint](Global%20Supply%20Chain%20Performance%20%26%20Optimization%20Analytics.pptx) |
 
 ---
 
-## 10. WRITING STYLE
+## 08 | Analytical Limitations & Future Improvements
 
-Write like a senior analyst presenting findings to a COO or Supply Chain Director.
+This portfolio case study has several important limitations:
 
-The tone must be:
+- Dashboard figures have not been fully reconciled against the underlying source data.
+- The reviewed repository did not contain an editable `.pbix` file.
+- Some dimension-table source files required by SQL queries were not available among the reviewed repository assets.
+- Database names require standardization across the SQL script.
+- Carrier on-time calculations require correction to distinguish completed shipments from on-time deliveries.
+- Full reproduction requires a complete schema, source data, and validated import process.
 
-- Business-focused
-- Confident but evidence-based
-- Visually engaging
-- Concise and insightful
-- Action-oriented
-- Natural and human
-- Appropriate for recruiters and senior stakeholders
-
-Use strong headings that encourage visitors to keep reading.
-
-Avoid generic AI language, unnecessary buzzwords and excessive technical jargon.
-
-Replace tool-centered descriptions with business-centered explanations.
-
-Example:
-
-**Weak:**
-
-"Used SQL queries and Power BI to analyze supply chain data."
-
-**Strong:**
-
-"Investigated supplier reliability, inventory shortages and delivery performance to identify where operational risks may emerge across a global distribution network."
-
-Write similarly compelling but uniquely tailored content for NexaDistrib.
+Future improvements include adding the missing source tables, a KPI dictionary, SQL validation checks, and the original Power BI report file if available.
 
 ---
 
-## 11. REQUIRED DELIVERY WORKFLOW
+## 09 | Skills Demonstrated
 
-**Step 1 — Study the Sources**
-
-Read the existing NexaDistrib case study, attached dashboard image and HTML code.
-
-Review supporting repository files if accessible.
-
-**Step 2 — Identify the Strongest Story**
-
-Determine which verified findings and dashboard-reported indicators support the clearest central business narrative.
-
-**Step 3 — Rewrite the Content**
-
-Write executive-quality headlines, descriptions, analytical findings, business implications and recommendations.
-
-**Step 4 — Improve Visual Presentation**
-
-Apply only approved, project-specific visual enhancements consistent with the attached dashboard.
-
-**Step 5 — Preserve Existing Website**
-
-Keep every unrelated element completely unchanged.
-
-**Step 6 — Validate**
-
-Check the HTML structure, responsive behavior, links, project filters and visual presentation.
-
-Check that every factual claim is source-supported or clearly qualified.
-
-**Step 7 — Deliver**
-
-Provide:
-
-1. A complete updated `projects.html` file.
-2. A concise summary of the rewritten NexaDistrib content.
-3. A brief explanation of any visual changes.
-4. A list of outstanding data-validation issues.
-5. Confirmation that all unrelated website elements remain unchanged.
-
-Do not return only code snippets.
+- Translating supply chain challenges into analytical business questions
+- Relational SQL analysis and advanced window functions
+- Operational KPI design and interpretation
+- Supplier and procurement performance evaluation
+- Inventory and warehouse risk analysis
+- Revenue and customer segmentation
+- Shipment performance analysis
+- Evidence-based business recommendations
+- Executive-level data storytelling and reporting
 
 ---
 
-## FINAL QUALITY STANDARD
+## Final Business Takeaway
 
-The visitor should understand the core analytical story within **10 seconds**, recognize my approach within **30 seconds**, and see the business relevance within **60 seconds**.
+### Revenue Tells You How Much You Sell. Operations Reveal How Reliably You Can Deliver.
 
-My portfolio should make recruiters and senior stakeholders think:
+The NexaDistrib case study demonstrates how connected operational analysis can help business leaders look beyond headline revenue and investigate risks across procurement, inventory, warehousing, and distribution.
 
-**"This analyst doesn't just build reports. They investigate business problems, recognize operational risks, interpret evidence, and communicate recommendations that leaders can evaluate."**
+The most valuable outcome of this project is the analytical framework: turning operational data into questions, investigating performance indicators, identifying potential risks, and communicating practical next steps.
 
-The final result must combine the visual sophistication of an enterprise Power BI dashboard with the storytelling clarity of an executive business presentation.
+**My approach: Analyze the evidence. Explain the business impact. Recommend the next decision.**
 
-**Do not merely describe my NexaDistrib dashboard. Turn the project into a compelling, evidence-based business story.**
+---
+
+**Khurram Naveed | Data Analyst**
+
+[GitHub](https://github.com/khurraminsights) · [LinkedIn](https://www.linkedin.com/in/khurram-naveed-0083851aa/)
+
+*This project is an independent portfolio simulation and does not represent an employer engagement or a verified production deployment.*
